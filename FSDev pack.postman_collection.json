@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "df30239c-54f3-4588-9a95-d1a376b636f5",
+		"name": "FSDev pack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25000054",
+		"_collection_link": "https://solar-eclipse-740464.postman.co/workspace/Team-Workspace~46309ca5-65dd-4424-862b-347d20534a10/collection/25000054-df30239c-54f3-4588-9a95-d1a376b636f5?action=share&source=collection_link&creator=25000054"
+	},
+	"item": [
+		{
+			"name": "Update book by book_id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "update",
+						"value": "yes",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "author_name",
+						"value": "4",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "book_id",
+						"value": "2",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "book_name",
+						"value": "neww3224",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "update",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "author_name",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "book_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "book_name",
+							"value": "Bad book 66",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tdk/",
+					"protocol": "http",
+					"host": [
+						"tdk"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "dbDeleteBookById",
+							"value": "34",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Request for book information updating"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_book_by_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://tdk/?delete_book_by_id=2",
+					"protocol": "http",
+					"host": [
+						"tdk"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "delete_book_by_id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Book erase by book_id"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_author_by_author_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://tdk/?delete_book_by_id=2",
+					"protocol": "http",
+					"host": [
+						"tdk"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "delete_book_by_id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Book erase by book_id"
+			},
+			"response": []
+		},
+		{
+			"name": "get_book_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tdk/?get_book_by_id=26",
+					"protocol": "http",
+					"host": [
+						"tdk"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "get_book_by_id",
+							"value": "26"
+						}
+					]
+				},
+				"description": "Get full book info by book_id"
+			},
+			"response": []
+		},
+		{
+			"name": "get_books_by_author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://tdk/?get_books_by_author=%D0%BF%D0%B5%D1%80%D1%86%D0%B5%D0%B2",
+					"protocol": "http",
+					"host": [
+						"tdk"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "get_books_by_author",
+							"value": "%D0%BF%D0%B5%D1%80%D1%86%D0%B5%D0%B2"
+						}
+					]
+				},
+				"description": "Get all books drom author name"
+			},
+			"response": []
+		}
+	]
+}
